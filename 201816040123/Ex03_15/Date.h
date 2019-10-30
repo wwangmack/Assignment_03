@@ -10,12 +10,10 @@ public:
    int getMonth(); // get month
    int getDay(); // get day
    int getYear(); // get year
-   /* Write a member function prototype for nextDay,
-      which will increment the Date by one day */
 private:
    int month; // 1-12
    int day; // 1-31 (except February(leap year), April, June, Sept, Nov)
-   int year; // 1900+
+   int year; // 1+
    bool leapYear(); // leap year
    int monthDays(); // days in month
 }; // end class Date
