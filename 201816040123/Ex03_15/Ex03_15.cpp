@@ -9,7 +9,7 @@ int main()
    Date d2( 2, 4, -2 );
    Date d3( 11, 14, 2004 );
    Date d4( 4, 34, 2004 );
-   Date d5;// instantiate object d of class Date
+   Date d5(2);// instantiate object d of class Date
    // output Date object d's value
    cout <<setw(5)<< "month" << " "<<'/'<<setw(5) << "day"<< " " << '/'<<setw(5) << "year"<< "\n" << endl;
       d1.displayDate(); // invokes function print
