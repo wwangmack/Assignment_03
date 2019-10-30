@@ -25,7 +25,7 @@ void Date::setMonth( int m )
 
 void Date::setYear( int y )
 {
-   year = y >= 0 ? y : 1; // sets year
+   year = y > 0 ? y : 1; // sets year
 } // end function setYear
 
 int Date::getDay()
@@ -48,10 +48,6 @@ void Date::displayDate()
 
    cout <<setw(5)<< month << " "<<'/'<<setw(5) << day<< " " << '/'<<setw(5) << year << "\n"<<endl; // outputs date
 } // end function print
-
-/* Write code to define member function nextDay;
-   make sure to check if the new day is the start of
-   a new month or a new year */
 
 bool Date::leapYear()
 {
