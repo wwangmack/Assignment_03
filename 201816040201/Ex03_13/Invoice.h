@@ -19,5 +19,5 @@ class Invoice
         string ljname;///零件名
         int number;///数量
         int money;///单价
-
+//
 };
