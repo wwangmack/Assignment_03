@@ -3,6 +3,7 @@
 using namespace std;
 Invoice::Invoice(string first,string second,int one,int two)
 {
+
     setevery(first,second,one,two);///初始化
 }
 void Invoice::setevery(string first,string second,int one,int two)
@@ -22,13 +23,20 @@ void Invoice::setlingjianname(string second)///修改零件名
 }
 void Invoice::setnumber(int one)///修改零件数
 {
-    if(number>=0)
+
+    if(one>=0)
     number=one;
+    else
+        number=0;
+
 }
 void Invoice::setmoney(int two)///修改单价
 {
-    if(money>=0)
+    if(two>=0)
     money=two;
+    else
+        money=0;
+
 }
 string Invoice::getlingjianhao()///输出零件号
 {
