@@ -8,11 +8,11 @@
 
 #include <iostream>
 using namespace std;
-#include "Invoice.h"
+#include "Date.h"
 
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    Invoice myin(2019,10,12);
+    Date myin(2019,10,12);
     myin.displayDate();
 }
