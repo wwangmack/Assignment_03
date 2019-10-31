@@ -5,12 +5,12 @@ using namespace std;
 
 Date::Date(int m, int d, int y) // Date constructor
 {
-   setDate(m,d,y); // use member function setDate to initalize Date
+    setDate(m, d, y); // use member function setDate to initalize Date
 }
 
-void Date::setDate(int mo, int dy, int yr) 
+void Date::setDate(int mo, int dy, int yr)
 {
-    setMonth(mo);  //set Date  using member functions
+    setMonth(mo); //set Date  using member functions
     setDay(dy);
     setYear(yr);
 }
@@ -20,7 +20,7 @@ void Date::setDay(int d) // set Day
     day = d; // store day
 }
 
-void Date::setMonth(int m) // set Month 
+void Date::setMonth(int m) // set Month
 {
     month = m <= 12 && m >= 1 ? m : 1; // if month is not in [1,12],set month 1
 }
@@ -32,15 +32,15 @@ void Date::setYear(int y) // set year
 
 int Date::getDay() // member function getDay
 {
-    return day; 
+    return day;
 }
 
-int Date::getMonth()
+int Date::getMonth() // return month
 {
     return month;
 }
 
-int Date::getYear()
+int Date::getYear() // retutn year
 {
     return year;
 }
