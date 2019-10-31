@@ -3,7 +3,6 @@
 #include<string>
 using namespace std;
 
-
 int main()
 {
     Invoice component1("00001","Halloween candy",100,1);
