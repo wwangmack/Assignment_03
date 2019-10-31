@@ -10,7 +10,7 @@ int main()
 {
      Invoice invoice("100", "phone", 10, 20); //create an invoice use the constructor
                                               // and initialize the date member
-                                              
+
      cout << "\nInvoice   " << endl // show invoice's message
           << setw(8) << "Id : " << setw(5) << invoice.getId() << endl
           << setw(8) << "Des : " << setw(5) << invoice.getDescription() << endl
